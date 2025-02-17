@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rhythmix</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="utility.css" />
+    </head>
+    <body>
+        <div class="layout flex bg-black">
+            <!-- Left Section -->
+
+            <div class="left m-1">
+                <div class="home-box p-1 rounded bg-grey">
+                    <div class="logo flex items-center gap">
+                        <img
+                            width="22px"
+                            class="invert"
+                            src="logo.svg"
+                            alt="logo"
+                        /><span>Rthymix</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <img class="invert" src="home.svg" alt="home" />Home
+                        </li>
+                        <li>
+                            <img
+                                class="invert"
+                                src="search.svg"
+                                alt="search"
+                            />Search
+                        </li>
+                    </ul>
+                </div>
+                <div class="library p-1 bg-grey rounded">
+                    <div class="heading">
+                        <img class="invert" src="playlist.svg" alt="playlist" />
+                        <h2>Your library</h2>
+                       
+                    </div>
+                    <div class="songcard">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <div>
+                            <a href="https://www.spotify.com/in-en/legal/">
+                                <span>Legal</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://www.spotify.com/in-en/safetyandprivacy/"
+                            >
+                                <span>Safety</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://www.spotify.com/in-en/legal/privacy-policy/"
+                            >
+                                <span>Privacy Policy</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://www.spotify.com/in-en/legal/cookies-policy/"
+                            >
+                                <span>Cookies</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+                            >
+                                <span>About Ads</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://www.spotify.com/in-en/accessibility/"
+                            >
+                                <span>Accessibility</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+
+            <div class="right rounded bg-grey">
+                <div class="header">
+                    <div class="nav flex items-center">
+                        <img
+                            width="15px"
+                            class="invert"
+                            src="icons/left-chevron.png"
+                            alt="left"
+                        />
+                        <img
+                            width="15px"
+                            class="invert"
+                            src="icons/chevron.png"
+                            alt="left"
+                        />
+                    </div>
+                    <div class="buttons">
+                        <button  class="btn">Log In</button>
+                        <button class="btn">Sign Up</button>
+                    </div>
+                </div>
+                <div class="rthymixPlaylist">
+                    <h2>Rthymix Playlist</h2>
+                    <div class="cardContainer">
+                        <div class="card rounded">
+                            <div class="play">
+                                <svg width="16" height="16" viewBox="0 0 24 24"fill="#000000"                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                            <img
+                                src="https://i.scdn.co/image/ab67616d00001e02f000fdbe92e9a1058034fd33  "
+                                alt=""
+                            />
+                            <h3>Happy Hits</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Sapiente, tempore?
+                            </p>
+                        </div>
+
+                        <div class="card rounded">
+                            <img
+                                src="https://i.scdn.co/image/ab67616d00001e02f000fdbe92e9a1058034fd33  "
+                                alt=""
+                            />
+                            <h3>Happy Hits</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Sapiente, tempore?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="playbar">
+                        <div class="seekbar">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="functionsbar">
+                            <div class="songname">
+
+                            </div>
+                                <div class="songButtons">
+                                    <img id="prev" class="invert" src="prev.svg" alt="previous">
+                                    <img id="play" class="invert"src="play.svg" alt="play">
+                                    <img id="next" class="invert"src="next.svg" alt="next">
+                                </div>
+                            <div class="songtime">
+
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

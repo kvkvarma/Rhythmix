@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif
+}
+.left{
+    width: 21vw;
+    padding: 5px;
+}
+.right{
+    width: 79vw;
+}
+.home-box{
+    font-weight: 500;
+}
+.home-box ul li{
+    display: flex;
+    gap: 10px;
+    width:20px;
+    list-style: none;
+    padding-top: 15px;
+}
+.library{
+    margin-top: 5px;
+    min-height:73vh;
+    position: relative;
+}
+.footer{
+    display: flex;
+    gap:10px;
+    position:absolute;
+    bottom: 10px;
+    font-size: 8px;
+}
+.footer a{
+    color: gray;
+    text-decoration: none;
+}
+.heading{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    font-size: 12px;
+    padding-top: 10px;
+}
+.heading img{
+    width:25px
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(58, 58, 58);
+}
+.header >*{
+    padding: 8px;
+}
+.right{
+    margin: 10px 0;
+    margin-right: 5px;
+    position: relative;
+}
+.rthymixPlaylist{
+    padding: 8px;
+}
+.rthymixPlaylist .cardContainer{
+    padding: 10px;
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+.card{
+    width:170px;
+    padding: 10px;
+    background-color: rgb(49, 49, 49);
+    position: relative;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.card p{
+    font-size: 8px;
+}
+.card:hover{
+    transition: all 0.3s ease;
+    background-color: rgb(60, 60, 60);   
+}
+.play{
+    width: 28px; height: 28px; background-color: #c1b003; border-radius: 50%;padding: 4px; display: flex; align-items: center; justify-content: center;
+    position:absolute;
+    right:14px;
+    top:55%;
+    color:white;
+}
+.btn{
+    margin-right: 4px;
+    padding: 5px 10px;
+    font-weight: bold;
+    width: 70px;
+    border-radius: 20px;
+    border:none;
+    background-color: rgb(204, 203, 203);
+    transition: transform 0.2s ease;
+    font-size: 12px;
+    cursor:pointer
+}
+.btn:hover{
+    transform: scaleX(1.05);
+    background-color: white;
+    color: black;
+}
+.playbar{
+    position: fixed;
+    width:74.5vw;
+    bottom: 20px;
+    border-radius: 6px  ;
+    background-color: rgb(50, 50, 50);
+    padding: 10px;
+    height: 40px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px; */
+}
+.seekbar{
+    width: 74vw;
+    height: 2px;
+    border:1px solid rgb(229, 229, 229);
+    background: rgb(229, 229, 229);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 8px;
+    cursor: pointer;
+}
+.circle{
+    height: 12px;
+    width: 12px;
+    border-radius:6px;
+    background-color: wheat;
+    position: relative;
+    bottom: 5px;
+    left: 0%;
+    transition: left 0.4s linear;
+}
+.songButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.songcard{
+    margin-top: 10px;
+    max-height: 60vh;
+    overflow-y: scroll;
+    background-color: rgb(42, 42, 42);
+    border-radius: 4px;
+}
+.songcard ul{
+    margin-top: 5px;
+    padding:8px;
+
+}
+
+.songcard ul li{
+    list-style-type: decimal;
+    padding: 8px 16px;
+    display: flex;
+    gap:15px;
+    max-width: 16vw;
+    font-size: 13px;
+    border: 1px solid rgb(62, 62, 62);
+    margin: 5px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+.info {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+.playbtn img{
+    margin-top: 5px;
+    width: 12px;
+}
+.playbtn{
+    background-color: rgb(8, 189, 47);
+    color:white;
+    border: none;
+    margin-top: -1px;
+    padding:0px 8px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.songinfo{
+    color: white;
+}
+.functionsbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
