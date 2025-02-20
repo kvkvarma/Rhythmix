@@ -1,155 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Rhythmix</title>
-        <link rel="stylesheet" href="styles/style.css" />
-        <link rel="stylesheet" href="styles/utility.css" />
-    </head>
-    <body>
-        <div class="layout flex bg-black">
-            <!-- Left Section -->
 
-            <div class="left m-1">
-                <div class="home-box p-1 rounded bg-grey">
-                    <div class="logo">
-                        <div class="logo-first-section">
-                            <img width="22px" class="invert" src="assets/logo.svg" alt="logo"/>
-                            <span style="color: rgba(218, 218, 3, 0.979);">Rthymix</span>
-                        </div>
-                        <div>
-                            <img src="assets/close.svg" class="close invert" alt="">
-                        </div>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img width="30" class="invert" src="img/close.svg" alt="">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo" style="font-size: 40px; color: rgb(156, 156, 2);">Rythmix</div>
+                <ul>
+                    <li><img class="invert" src="img/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="img/search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="img/playlist.svg" alt="">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+
+                <div class="songList">
+
                     <ul>
-                        <li>
-                            <img class="invert" src="assets/home.svg" alt="home" />Home
-                        </li>
-                        <li>
-                            <img
-                                class="invert"
-                                src="assets/search.svg"
-                                alt="search"
-                            />Search
-                        </li>
+
                     </ul>
                 </div>
-                <div class="library p-1 bg-grey rounded">
-                    <div class="heading">
-                        <img class="invert" src="assets/playlist.svg" alt="playlist" />
-                        <h2>Your library</h2>
-                       
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
                     </div>
-                    <div class="songcard">
-                        <ul>
-                            
-                        </ul>
-                    </div>
-                    <div class="footer">
-                        <div>
-                            <a href="https://www.spotify.com/in-en/legal/">
-                                <span>Legal</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a
-                                href="https://www.spotify.com/in-en/safetyandprivacy/"
-                            >
-                                <span>Safety</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a
-                                href="https://www.spotify.com/in-en/legal/privacy-policy/"
-                            >
-                                <span>Privacy Policy</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a
-                                href="https://www.spotify.com/in-en/legal/cookies-policy/"
-                            >
-                                <span>Cookies</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a
-                                href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
-                            >
-                                <span>About Ads</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a
-                                href="https://www.spotify.com/in-en/accessibility/"
-                            >
-                                <span>Accessibility</span>
-                            </a>
-                        </div>
-                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
                 </div>
             </div>
 
-            <!-- Right Section -->
 
-            <div class="right rounded bg-grey">
-                <div class="header">
-                    <div class="nav flex items-center">
-                        <div class="hamburgerContainer">   
-                            <div class="hamburgerdiv">
-                                <img src="assets/hamburger.svg" class="hamburger invert" alt="">
-                            </div>
-                            <img
-                            width="15px"
-                            class="invert"
-                            src="icons/left-chevron.png"
-                            alt="left"
-                        />
-                        <img
-                            width="15px"
-                            class="invert"
-                            src="icons/chevron.png"
-                            alt="left"
-                        />
-                        </div>
-                    </div>
-                    <div class="buttons">
-                        <button  class="btn">Log In</button>
-                        <button class="btn">Sign Up</button>
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+
+                        <img width="40" class="invert hamburger" src="img/hamburger.svg" alt="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
                 </div>
-                <div class="rthymixPlaylist">
-                    <h2>Rthymix Playlist</h2>
-                    <div class="cardContainer">
-                        
-                    </div>
-                    <div class="playbar">
-                        <div class="seekbar">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="functionsbar">
-                            <div class="songname">
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">  </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
 
+                        </div>
+                    </div>
+                    <div class="abovebar">
+
+
+                        <div class="songinfo">
+
+                        </div>
+                        <div class="songbuttons">
+                            <img width="35" id="previous" src="img/prevsong.svg" alt="">
+                            <img width="35" id="play" src="img/play.svg" alt="">
+                            <img width="35" id="next" src="img/nextsong.svg" alt="">
+                        </div>
+                        <div class="timevol">
+
+                       
+                        <div class="songtime">
+
+                        </div>
+                        <div class="volume">
+                            <img width="25" src="img/volume.svg" alt="">
+                            <div class="range">
+                                <input type="range" name="volume" id="">
                             </div>
-                                <div class="songButtons">
-                                    <img id="prev" class="invert" src="assets/prev.svg" alt="previous">
-                                    <img id="play" class="invert" src="assets/play.svg" alt="play">
-                                    <img id="next" class="invert" src="assets/next.svg" alt="next">
-                                </div>
-                            <div class="timeVol">
-                                <div class="songtime"></div>
-                                <div class="voli">
-                                    <img src="assets/volume.svg" alt="volume" class="invert volumebtn">
-                                    <input type="range" class="volume">
-                                </div>
-                            </div>
-                         </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="script.js"></script>
-    </body>
-</html>
+    </div>
+    <script src="js/script.js"></script>
+</body>
 
+</html>
